@@ -1,0 +1,51 @@
+1. Word Definitions
+	Display definitions of a word. 
+./dict def <word> OR node dict.js def <word>
+
+2. Word Synonyms
+	Display synonyms of a word. 
+	./dict syn <word> OR node dict.js syn <word>
+
+3. Word Antonyms
+	Display antonyms of a word
+	./dict ant <word> OR node dict.js ant <word>
+
+4. Word Examples
+	Display examples of a word
+	./dict ex <word> OR node dict.js ex <word>
+
+5. Word Full Dict
+	Display all above details for a word
+	./dict <word> OR node dict.js <word> or node dict.js dict <word>
+
+6. Word of the Day Full Dict
+	Display all above details of word of the day
+	./dict OR node dict.js
+
+7. Word Game
+	./dict play OR node dict.js play
+	The program should select a random work and display a definition, or synonym, or antonym to user, and ask the user to guess the word
+
+	If correct guess is entered, program should tell that the word is correct, and start with new word to guess.
+	Other Synonyms (not yet displayed as hits) of the word should be accepted as correct answer.
+
+	If incorrect word is entered, program should ask for
+		- 1. try again
+			Lets user enter guess again
+
+		- 2. hint
+			Display a hint, and let user enter guess again
+			Hint can be randomly chosen from following, and should not be repeated - 
+            Another definition of the word
+            OR Synonym of the word
+            OR Antonym of the word
+            If all definitions, synonyms and antonyms have already been displayed as hint, then display the word randomly jumbled (eg. ‘atc’ for word ‘cat’)
+		-3 skip
+			Display the word, its full dict, and start with new word to guess
+
+
+	Game Scoring
+   Each correct answer gives 10 points.
+   Each hint reduces 3 point.
+   Each wrong try reduces 2 points.
+   Skip reduces 4 points.
